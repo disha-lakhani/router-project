@@ -5,6 +5,7 @@ import Login from '../pages/Login'
 import Product from '../pages/Product'
 import Home from '../pages/Home'
 import Error from '../pages/Error'
+import Single from '../pages/Single'
 
 const AllRoute = () => {
   return (
@@ -12,10 +13,11 @@ const AllRoute = () => {
 
         <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='/Product' element={<Product/>} />
+            <Route path='/Products' element={<Product/>} />
             <Route path='/Signup' element={<Signup/>} />
             <Route path='/Login' element={<Login/>} />
             <Route path='*' element={<Error/>} />
+            <Route path='/product/:id' element={<Single />} />
             
         </Routes>
     </div>
